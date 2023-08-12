@@ -29,7 +29,7 @@ addClass.classList.add('newClass');
 */
 /*
 
-//  *********************** How to add new Element in the child 
+//  *********************** How to add new innerText in the child 
 
 const placesNewList = document.getElementById('palces-new-list');
 
@@ -41,4 +41,24 @@ placesNewList.appendChild(li);
 */
 
 
+/*********************** Add innerHTML 
 
+const addSection = document.getElementById('new-section-places');
+
+const sectionAdd = document.createElement('section');
+
+sectionAdd.innerHTML = `
+<h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h1>This is our goal</h1>
+    <ul>
+        <li>Day 1</li>
+        <li>Day 2</li>
+        <li>Day 3</li>
+        <li>Day 4</li>
+        <li>Day 5</li>
+    </ul>
+`
+addSection.appendChild(sectionAdd);
+
+ */
