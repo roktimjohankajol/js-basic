@@ -96,3 +96,21 @@ document.getElementById('delete-btn').addEventListener('click', function(){
     deleteText.style.display = 'none';
     document.getElementById('input-delete').value = '';
 });
+
+
+// Item add & Remove That's Call Bubble 
+
+document.getElementById('list-container').addEventListener('click', function(event){
+    event.target.parentNode.removeChild(event.target);
+});
+
+document.getElementById('add-btn').addEventListener('click', function(event){
+
+    const listContainer = document.getElementById('list-container');
+
+    const li = document.createElement('li');
+    li.innerText = 'New Item added';
+    li.classList.add('item');
+    listContainer.appendChild(li);
+
+});

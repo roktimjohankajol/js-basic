@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Your Balance</title> 
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-20">
+    <h1 class="flex justify-center text-5xl"> Let's Calculate Your <span class="text-blue-400 px-2">  Blance </span> !!!</h1>
+
+    <section>
+        <div class="grid grid-cols-3 gap-20 w-9/12 m-auto mt-20">
+            <div class="bg-blue-400 p-10 text-white rounded-md">
+                <h2 class="text-4xl">Deposit</h2>
+                <h3  class="text-3xl py-3">$<span id="deposit-amount-show">00</span></h3>
+            </div>
+            <div class="bg-red-400 p-10 text-white rounded-md">
+                <h2 class="text-4xl">Withdraw</h2>
+                <h3 class="text-3xl py-3">$<span id="withdraw-value-show">00</span></h3>
+            </div>
+            <div class="bg-green-400 p-10 text-white rounded-md">
+                <h2 class="text-4xl">Your Balance</h2>
+                <h3 class="text-3xl py-3">$<span id="total-balance">100</span></h3>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-2 gap-20 mt-20 w-9/12 m-auto">
+            <div class="bg-blue-400 rounded-md text-white p-10">
+                <h2 class="text-3xl">Deposit Your Balance</h2>
+                <input id="deposit-balance" class="p-3 rounded-md my-3 w-full text-black focus:outline-none" type="number" placeholder="$ Deposit Your Amount"><br>
+                <input id="deposit-btn" class="bg-white text-blue-400 p-3 rounded-md w-3/12 cursor-pointer" type="submit" value="Deposit">
+            </div>
+            <div class="bg-red-400 rounded-md text-white p-10">
+                <h2 class="text-3xl"> Withdraw Your Balance</h2>
+                <input id="withdraw-balance" class="p-3 rounded-md my-3 w-full text-black focus:outline-none" type="number" placeholder="$ Withdraw Your Amount"><br>
+                <input id="withdraw-btn" class="bg-white text-red-400 p-3 rounded-md w-3/12 cursor-pointer" type="submit" value="Withdraw">
+            </div>
+        </div>
+    </section>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
