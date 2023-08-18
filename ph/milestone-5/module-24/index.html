@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accordion with Button</title>
+<style>
+  .accordion-section {
+    display: none;
+  }
+</style>
 </head>
 <body>
 
+<button id="toggleButton">Toggle Accordion</button>
+<div class="accordion-section" id="accordionSection">
+  <p>This is the content of the accordion section.</p>
+</div>
 
-<main id="new-section-places">   
-    <section>
-        <h1 class="testClass">This is heading 1</h1>
-        <h2 class="testClass">This is heading 2</h2>
-        <h1 id="test">This is our goal</h1>
-        <ul id="palces-new-list">
-            <li>Day 1</li>
-            <li>Day 2</li>
-            <li>Day 3</li>
-            <li>Day 4</li>
-            <li>Day 5</li>
-        </ul>
-    </section>
-</main>
+<script>
+const toggleButton = document.getElementById('toggleButton');
+const accordionSection = document.getElementById('accordionSection');
 
+toggleButton.addEventListener('click', () => {
+  if (accordionSection.style.display === 'none') {
+    accordionSection.style.display = 'block';
+  } else {
+    accordionSection.style.display = 'none';
+  }
+});
+</script>
 
-    <script src="main.js"></script>
 </body>
 </html>
