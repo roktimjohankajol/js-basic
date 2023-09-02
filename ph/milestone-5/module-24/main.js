@@ -41,25 +41,25 @@ placesNewList.appendChild(li);
 */
 
 
-/*********************** Add innerHTML 
+// ********************** Add innerHTML 
 
-const addSection = document.getElementById('new-section-places');
+// const addSection = document.getElementById('new-section-places');
 
-const sectionAdd = document.createElement('section');
+// const sectionAdd = document.createElement('section');
 
-sectionAdd.innerHTML = `
-<h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h1>This is our goal</h1>
-    <ul>
-        <li>Day 1</li>
-        <li>Day 2</li>
-        <li>Day 3</li>
-        <li>Day 4</li>
-        <li>Day 5</li>
-    </ul>
-    h1  
-addSection.appendChild(sectionAdd);
+// sectionAdd.innerHTML = `
+// <h1>This is heading 1</h1>
+//     <h2>This is heading 2</h2>
+//     <h1>This is our goal</h1>
+//     <ul>
+//         <li>Day 1</li>
+//         <li>Day 2</li>
+//         <li>Day 3</li>
+//         <li>Day 4</li>
+//         <li>Day 5</li>
+//     </ul>
+//     h1  
+// addSection.appendChild(sectionAdd);
 
- */
+ 
 

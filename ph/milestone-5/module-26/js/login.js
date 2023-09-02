@@ -10,11 +10,15 @@ document.getElementById('login-btn').addEventListener('click', function(){
     const password = passwordField.value;
 
     if(email === 'abc@gmail.com' && password === 'abc'){
-        window.location.href='bank.html';
-        // alert('Your Are Logged');
+        // window.location.href='bank.html';
+        alert('Your Are Logged');
     }
     else{
         alert('You Can not login');
     }
 
 });
+
+const numbers = [45, 12, 36, 84]
+numbers.shift(34);
+console.log(numbers);
